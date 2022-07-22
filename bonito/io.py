@@ -442,8 +442,8 @@ class Writer(Thread):
                     *mods_tags,
                 ]
 
-                if res["moves"] is not None and self.mode != 'wfq':
-                    tags.append(f'mv:B:c,{encode_moves(res["moves"], res["stride"])}')
+                #if res["moves"] is not None and self.mode != 'wfq':
+                #    tags.append(f'mv:B:c,{encode_moves(res["moves"], res["stride"])}')
 
                 if len(seq):
                     if self.mode == 'wfq':
